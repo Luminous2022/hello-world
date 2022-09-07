@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div[land] {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: lightgrey;
+}
+.road {
+    border-bottom: 700px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    height: 0;
+    width: 300px;
+    margin: auto;
+}
+.double_line {
+    width: 1px;
+    border: 3px dashed yellow;
+    height: 100%;
+    top: 0px;
+    left: 49%;
+    border-radius: 50%;
+    position: absolute;
+}
+.carleft {
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    height: 40px;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+.car_1 {
+    left: 23%;
+    animation-name: carOne;
+    animation-duration: 13s;
+
+}
+@keyframes carOne {
+    0% {top: -4px;}
+    100% {top: 900px;}
+}
+.car_2 {
+    left: 30%;
+    animation-name: carTwo;
+    animation-duration: 11s;
+
+}
+@keyframes carTwo {
+    0% {top: -4px;}
+    100% {top: 900px;}
+}
+.car_3 {
+    left: 35%;
+    animation-name: carThree;
+    animation-duration: 9s;
+
+}
+@keyframes carThree {
+    0% {top: -4px;}
+    100% {top: 900px;}
+}
+.carRight {
+    position: absolute;
+    bottom: 20px;
+    width: 30px;
+    height: 40px;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transform: rotate(180deg);
+}
+.car_4 {
+    left: 75%;
+    animation-name: carFour;
+    animation-duration: 9s;
+   
+
+}
+@keyframes carFour {
+    0% {bottom: -4px;}
+    100% {bottom: 900px;}
+}
+.car_5 {
+    left: 80%;
+    animation-name: carFive;
+    animation-duration: 11s;
+    
+
+}
+@keyframes carFive {
+    0% {bottom: -4px;}
+    100% {bottom: 900px;}
+}
+.car_6 {
+    left: 70%;
+    animation-name: carSix;
+    animation-duration: 13s;
+    
+
+}
+@keyframes carSix {
+    0% {bottom: -4px;}
+    100% {bottom: 900px;}
+}
+.my_car {
+    bottom: 250px;
+    left: 52%;
+}
+.controller {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    height: 60px;
+    background: #4b00ff14;
+}
+.controller span{
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px){
+    .road {
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 70%;
+
+    }
+    .car_1 {
+        left: 15%;
+
+    }
+    .car_2 {
+        left: 25%;
+
+    }
+    .car_3 {
+        left: 35%;
+
+    }
+    .car_4 {
+        left: 78%;
+    }
+    .car_5 {
+        left: 68%;
+    }
+    .car_6 {
+        left: 78%;
+    }
+    .my_car {
+        left: 58%;
+    }
+}
